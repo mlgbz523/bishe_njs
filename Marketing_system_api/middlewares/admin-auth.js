@@ -26,7 +26,7 @@ module.exports = async (req, res, next) => {
         if (user.role !== 100) {
             throw new UnauthorizedError('您没有权限使用当前接口。')
         }
-        // 如果通过验证，将 user 对象挂载到 req 上，方便后续中间件或路由使用
+        // 如果通过验证，将 emp 对象挂载到 req 上，方便后续中间件或路由使用
         req.user = user;
 
         // 一定要加 next()，才能继续进入到后续中间件或路由
