@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         sourceKey: 'dept_id',  // 确保 sourceKey 与主键或唯一键匹配
         as: 'employees',
       });
-1
+
 
       // 可选：添加与 UserEmployee 的 manager 关联。
       // 请仔细阅读之前的说明，了解潜在问题和注意事项
